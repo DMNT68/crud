@@ -10,7 +10,7 @@
 <div class="container">
 <div class="row">
 <div class="col-md-12">
-		<h2>VER ENTRADAS</h2>
+		<h2>MIS CONTACTOS</h2>
 <!-- Button trigger modal -->
   <a data-toggle="modal" href="#myModal" class="btn btn-default">Agregar</a>
 <br><br>
