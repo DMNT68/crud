@@ -3,7 +3,7 @@
 include "conexion.php";
 
 $user_id=null;
-$sql1= "select * from person";
+$sql1= "select * from contactos";
 $query = $con->query($sql1);
 ?>
 

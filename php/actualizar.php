@@ -5,7 +5,7 @@ if(!empty($_POST)){
 		if($_POST["name"]!=""&& $_POST["lastname"]!=""&&$_POST["address"]!=""){
 			include "conexion.php";
 			
-			$sql = "update person set name=\"$_POST[name]\",lastname=\"$_POST[lastname]\",email=\"$_POST[email]\",address=\"$_POST[address]\",phone=\"$_POST[phone]\" where id=".$_POST["id"];
+			$sql = "update contactos set name=\"$_POST[name]\",lastname=\"$_POST[lastname]\",email=\"$_POST[email]\",address=\"$_POST[address]\",phone=\"$_POST[phone]\" where id=".$_POST["id"];
 			$query = $con->query($sql);
 			if($query!=null){
 				print "<script>alert(\"Actualizado exitosamente.\");window.location='../index.php';</script>";
