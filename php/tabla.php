@@ -15,7 +15,7 @@ $query = $con->query($sql1);
 	<th>Email</th>
 	<th>Direccion</th>
 	<th>Telefono</th>
-	<th></th>
+	<th>Opciones</th>
 </thead>
 <?php while ($r=$query->fetch_array()):?>
 <tr>
@@ -25,7 +25,7 @@ $query = $con->query($sql1);
 	<td><?php echo $r["address"]; ?></td>
 	<td><?php echo $r["phone"]; ?></td>
 	<td style="width:150px;">
-		<a href="./editar.php?id=<?php echo $r["id"];?>" class="btn btn-sm btn-warning">Editar</a>
+		<a href="./editar.php?id=<?php echo $r["id"];?>" class="btn btn-sm">Editar</a>
 		<a href="#" id="del-<?php echo $r["id"];?>" class="btn btn-sm btn-danger">Eliminar</a>
 		<script>
 		$("#del-"+<?php echo $r["id"];?>).click(function(e){
