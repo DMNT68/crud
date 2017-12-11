@@ -26,7 +26,7 @@ $query = $con->query($sql1);
 	<td><?php echo $r["phone"]; ?></td>
 	<td style="width:150px;">
 		<a href="./editar.php?id=<?php echo $r["id"];?>" class="btn btn-sm">Editar</a>
-		<a href="#" id="del-<?php echo $r["id"];?>" class="btn btn-sm btn-danger">Eliminar</a>
+		<a href="#" id="del-<?php echo $r["id"];?>" class="btn btn-sm">Eliminar</a>
 		<script>
 		$("#del-"+<?php echo $r["id"];?>).click(function(e){
 			e.preventDefault();
